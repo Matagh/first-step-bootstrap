@@ -100,6 +100,7 @@
 
 			<!-- COLONNE DE DROITE -->
 			<div class="col-sm-4">
+				<!-- Formulaire de recherche -->
 				<div class="card">
 					<div class="card-header">
 						<i class="fa fa-search"></i> Rechercher
@@ -115,16 +116,31 @@
 						</form>
 					</div>
 				</div>
-				<div>
-					<p>Laisser un commentaire :</p>
-					<form method="post" action="#">
-						<label for="pseudo">Pseudo : </label><input type="text" name="pseudo" id="pseudo" />
-						<br />
-						<label for="message">Message : </label>
-						<textarea name="memo" rows="5" cols="30">Tapez votre message ici</textarea>
-						<input type="submit" name="btEnvoyer" value="Envoyer">
-					</form>
+				<!-- Fin Formulaire de recherche -->
+
+				<!-- Formulaire de commentaire -->
+				<div class="card">
+					<div class="card-header">
+						<i class="fa fa-comments" aria-hidden="true"></i> Laisser un commentaire
+					</div>
+					<div class="card-body">
+						<form method="POST" action="#">
+							<div class="form-group">
+								<label for="pseudo">Pseudo : </label>
+								<input class="form-control" type="text" name="pseudo" id="pseudo" />
+							</div>
+							<div class="form-group">
+								<label for="message">Message : </label>
+								<textarea class="form-control" name="memo" rows="5" cols="30">Tapez votre message ici</textarea>
+							</div>
+							
+							<div class="form-group">
+								<button type="button" class="btn btn-primary form-control"> Envoyer </button>
+							</div>
+						</form>
+					</div>
 				</div>
+				<!-- Fin Formulaire de commentaire -->
 				<div>
 					<p>Très bon tuto, parfait, comme toujours sur ce site Internet au design futuriste. G. MENVU</p>
 					<p>Site très instructif, c'est devenu pour moi une référence en matière de développement Web. Le design est
