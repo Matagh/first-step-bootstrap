@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Exemple d'utilisation de Bootstrap</title>
 </head>
 
@@ -94,25 +95,25 @@
 					<a class="carousel-control-next" href="#idCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
 				</div>
 				<!-- Fin Carousel -->
-
-				<!-- 
-				<p>
-					<img src="./images/album.png" alt="Exemple de site réalisé avec Bootstrap style album" />
-					<img src="./images/carousel.jpg" alt="Exemple de site réalisé avec Bootstrap avec caroussel" />
-					<img src="./images/form.jpg" alt="Exemple de site réalisé avec Bootstrap avec formulaire" />
-					<img src="./images/pricing.png" alt="Exemple de site réalisé avec Bootstrap style commercial" />
-					<img src="./images/monitor.jpg" alt="Exemple de site réalisé avec Bootstrap style monitoring" />
-				</p>
-			</div> -->
+			</div>
 			<!-- Fin Colonne de gauche -->
 
 			<!-- COLONNE DE DROITE -->
 			<div class="col-sm-4">
-				<div>
-					<form method="post" action="#">
-						<label for="recherche">Rechercher : </label><input type="text" name="recherche" id="recherche" />
-						<input type="submit" name="btrechercher" value="Rechercher">
-					</form>
+				<div class="card">
+					<div class="card-header">
+						<i class="fa fa-search"></i> Rechercher
+					</div>
+					<div class="card-body">
+						<form method="POST" action="#">
+							<div class="form-group">
+								<input class="form-control" type="text" name="recherche" id="recherche" />
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn-success form-control"> Rechercher </button>
+							</div>
+						</form>
+					</div>
 				</div>
 				<div>
 					<p>Laisser un commentaire :</p>
